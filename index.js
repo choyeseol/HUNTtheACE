@@ -4,6 +4,7 @@ const cardObjectDefinitions = [
   { id: 3, imagePath: "images/card-QueenDiamonds.png" },
   { id: 4, imagePath: "images/card-AceSpades.png" },
 ];
+
 const aceId = 4;
 
 const cardBackImgPath = "images/card-back-Blue.png";
@@ -266,6 +267,7 @@ function collectCards() {
 function transformGridArea(areas) {
   cardContainerElem.style.gridTemplateAreas = areas;
 }
+
 function addCardsToGridAreaCell(cellPositionClassName) {
   const cellPositionElem = document.querySelector(cellPositionClassName);
 
@@ -360,6 +362,7 @@ function shuffleCards() {
     }
   }
 }
+
 function randomizeCardPositions() {
   const random1 = Math.floor(Math.random() * numCards) + 1;
   const random2 = Math.floor(Math.random() * numCards) + 1;
@@ -375,6 +378,7 @@ function dealCards() {
 
   transformGridArea(areasTemplate);
 }
+
 function returnGridAreasMappedToCardPos() {
   let firstPart = "";
   let secondPart = "";

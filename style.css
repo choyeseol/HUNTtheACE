@@ -17,6 +17,7 @@
 
   --primary-font: "Quicksand", sans-serif;
 }
+
 body {
   height: 100vh;
   font-family: var(--primary-font);
@@ -55,6 +56,7 @@ main {
 .card-pos-d {
   grid-area: d;
 }
+
 .card-pos-a,
 .card-pos-b,
 .card-pos-c,
@@ -72,6 +74,7 @@ main {
   cursor: pointer;
   transition: transform 0.4s ease-in-out;
 }
+
 .card-inner {
   position: relative;
   width: 100%;
@@ -80,6 +83,7 @@ main {
   transition: transform 0.4s;
   transform-style: preserve-3d;
 }
+
 .card-front,
 .card-back {
   position: absolute;
@@ -88,6 +92,7 @@ main {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .card-img {
   height: 100%;
   background-image: url("../images/card-back-Blue.png");
@@ -96,22 +101,27 @@ main {
 .card-back {
   transform: rotateY(180deg);
 }
+
 .card-inner.flip-it {
   transform: rotateY(180deg);
 }
+
 header {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
+
 .header-title-container {
   display: flex;
   justify-content: center;
 }
+
 .header-round-info-container {
   display: flex;
   justify-content: space-evenly;
 }
+
 .current-status {
   font-size: 1.5rem;
   text-align: center;
@@ -132,6 +142,7 @@ header {
 .header-img-container {
   width: 150px;
 }
+
 .header-img {
   height: 75px;
   border-radius: 5px;
@@ -140,12 +151,14 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transform: rotate(-3deg);
 }
+
 .badge {
   background-color: var(--badge-bg-color);
   color: var(--secondary-color);
   padding: 2px 10px 3px;
   border-radius: 15px;
 }
+
 .game-play-button-container {
   width: 150px;
   height: 70px;
